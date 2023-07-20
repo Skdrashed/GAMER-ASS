@@ -112,9 +112,6 @@ nav {
 
 /* heading section end */
 
-
-
-
 /* banner section style */
 .banner-container {
     height: 700px;
@@ -256,4 +253,167 @@ nav {
     font-size: 30px;
     font-weight: 700;
     line-height: 45px;
+}
+/* Video section style */
+
+.video-container {
+    text-align: center;
+}
+
+.video-header {
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.video-container>p {
+    color: #534C64;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 45px;
+}
+
+/* card style */
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.image-container {
+    position: relative;
+    border-radius: 16px;
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    border-radius: 16px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.image-container:hover .play-icon {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.fa-play {
+    font-size: 40px;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+
+/* card style end */
+
+/* download section styles */
+.download-title {
+    text-align: right;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    width: 341px;
+}
+
+.play {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 24px;
+}
+
+.play-details {
+    width: 353px;
+    color: #534C64;
+    text-align: right;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.downloads {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 800px;
+    margin-top: 100px;
+}
+
+.big-img {
+    width: 634.833px;
+    height: 650px;
+    margin-top: 200px;
+}
+
+.small-img {
+    position: relative;
+    top: -300px;
+    left: -140px;
+}
+
+/* games section style */
+.games,
+.game2 {
+    display: flex;
+    height: 75px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.game-title {
+    color: #0B0223;
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 15px;
+}
+
+.game {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 317px;
+    height: 50px;
+}
+
+.game:hover {
+    cursor: pointer;
+    border: 3px solid #FF42A5;
+    padding: 5px;
+    border-radius: 50px;
+    height: 61px;
+}
+
+.game:hover .game-title {
+    color: #F948B2;
 }
