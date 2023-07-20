@@ -1,0 +1,9 @@
+@media screen and (max-width:425px) {
+    nav,
+    heading-container
+    {
+        flex-direction: column;
+        padding: 0px;
+        width: 100%;
+    }
+}
